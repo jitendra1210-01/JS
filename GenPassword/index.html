@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenPassWord</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenPassWord</title>
+  <!-- Google Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="style.css">
+
+  </head>
+
 <body>
-    <div class="container">
-        <h1>Password Generator</h1>
-        <div class="input-box">
-            <input type="text" name="" class="passBox" disabled>
-        </div>
-        <input type="range" name="inputslider" id="inputslider" min="1" max="30" value="8">
-        <div class="row">
-            <p>password length</p>
-            <span id="slidervalue">7</span>
-        </div>
-        <div class="row">
-            <label for="">Include lowercase Character(a-z)</label>
-            <input type="checkbox" id="lowercase">
-        </div>
-        <div class="row">
-            <label for="">Include uppercase Character(A-Z)</label>
-            <input type="checkbox" id="uppercase">
-        </div>
-        <div class="row">
-            <label for="">Include Numbers(0-9)</label>
-            <input type="checkbox" id="number">
-        </div>
-        <div class="row">
-            <label for="">Include Special Symbol </label>
-            <input type="checkbox" id="symbol">
-        </div>
-        <button type="button" id="genbtn">Generate Password</button>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="input-box">
+      <input type="text" name="" class="passBox" disabled />
+      <i class="material-icons" id="copy">content_copy</i> 
     </div>
-    <script src="script.js"></script>
+    <input type="range" name="inputslider" id="inputslider" min="1" max="20" value="8" />
+    <div class="row">
+      <p>Password Length</p>
+      <span id="slidervalue">7</span>
+    </div>
+    <div class="row">
+      <label for="">Include lowercase Character(a-z)</label>
+      <input name="lowercase" type="checkbox" id="lowercase" checked />
+    </div>
+    <div class="row">
+      <label for="">Include uppercase Character(A-Z)</label>
+      <input name="uppercase" type="checkbox" id="uppercase" checked />
+    </div>
+    <div class="row">
+      <label for="">Include Numbers(0-9)</label>
+      <input name="numbers" type="checkbox" id="numbers" checked />
+    </div>
+    <div class="row">
+      <label for="">Include Special Symbol </label>
+      <input name="symbol" type="checkbox" id="symbol" checked />
+    </div>
+    <button type="button" id="genbtn">Generate Password</button>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

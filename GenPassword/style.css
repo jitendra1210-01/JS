@@ -1,0 +1,103 @@
+ /* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #9099a0, #ddebf5);
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f2f3f3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.passBox {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  outline: none;
+  padding: 5px;
+}
+
+#copy {
+  cursor: pointer;
+  color: #4facfe;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.input-box:hover {
+  background: #e6e6e6;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+p, label {
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #4facfe;
+}
+
+button {
+  width: 100%;
+  background: #4facfe;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00c6fb;
+}
